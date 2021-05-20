@@ -21,7 +21,7 @@ public class AuthorizationTest {
         $("[data-test-id='login'] input").setValue(user.getLogin());
         $("[data-test-id='password'] input").setValue(user.getPassword());
         //$$("button").find(exactText("Продолжить")).click();
-        $$("button").findBy(exactText("Продолжит")).click();
+        $$("button").findBy(exactText("Продолжить")).click();
         $("h2").shouldHave(text("Личный кабинет"));
     }
     @Test
